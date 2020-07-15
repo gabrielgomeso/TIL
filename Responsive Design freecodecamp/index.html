@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Responsive Design with freecodecamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Responsive Design with freecodecamp</h1>
+
+    <h2>Responsive text</h2>
+    <p>This is a paragraph which is testing the code down bellow. I made it using @media</p>
+    <code>
+        p {
+            font-size: 20px;
+        }
+        
+        @media (max-height: 800px){ 
+            h1 {
+                font-size: 15px;
+            }
+        
+            h2 {
+                font-size: 12px;
+            }
+            
+            p {
+            font-size: 10px;
+              }
+          }
+    </code>
+
+    <h2>Responsive images</h2>
+    <img src="https://i.imgur.com/PyfOsBP.jpg" alt="Dune HardCover">
+    <p>I made it by using max-width: 100% and height: auto</p>
+    <code>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    </code>
+
+    <h2>"Retina Image"</h2>
+    <p>This is actually just a tip. If you're altering the size of an image, use half of their original values to get
+        high resolution.</p>
+    <img style="width: 100px; height: 100px;"
+        src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg" alt="Camp Tag">
+
+    <h2>Responsive Text part 2</h2>
+    <p>Instead of using px or em to size fonts, use vw, vh, vmin and vmax.</p>
+    <h2>Flexbox FINALLY</h2>
+    <div class="container">
+        <div class="box-1">
+            Red
+        </div>
+        <div class="box-2">
+            Blue
+        </div>
+    </div>
+
+    <h3>Flex-direction</h3>
+    <p>Flex-direction can be "row", "column", "row-reverse" and "column-reverse"</p>
+    <div class="container-row">
+        <div class="box-1">
+            Red
+        </div>
+        <div class="box-2">
+            Blue
+        </div>
+    </div>
+
+    <h3>Align Elements with justify-content</h3>
+    <p>To much to explain, read this:
+        https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/align-elements-using-the-justify-content-property
+    </p>
+
+    <div id="box-container">
+        <div id="box-3">Hello World</div>
+        <div id="box-4"></div>
+    </div>
+
+    <h3>align-items</h3>
+    <p>The different values available for align-items include:
+    <ul>
+        <li>flex-start: aligns items to the start of the flex container. For rows, this aligns items to the top of the
+            container. For columns, this aligns items to the left of the container.
+        </li>
+        <li> flex-end: aligns items to the end of the flex container. For rows, this aligns items to the bottom of the
+            container. For columns, this aligns items to the right of the container.
+        </li>
+        <li> center: align items to the center. For rows, this vertically aligns items (equal space above and below the
+            items). For columns, this horizontally aligns them (equal space to the left and right of the items).
+        </li>
+        <li> stretch: stretch the items to fill the flex container. For example, rows items are stretched to fill the
+            flex
+            container top-to-bottom. This is the default value if no align-items value is specified.
+        </li>
+        <li> baseline: align items to their baselines. Baseline is a text concept, think of it as the line that the
+            letters
+            sit on.
+        </li>
+    </ul>
+    </p>
+
+    <h3>flex-wrap</h3>
+    <p>flex-wrap is used to wrap elements when there is to many of them together. Properties: nowrap, wrap, wrap-reverse</p>
+
+    <h3>flex-shrink and flex-grow</h3>
+    <p>Both of them increase or decrease the size of a box based on the given value</p>
+</body>
+
+
+
+
+</html>
